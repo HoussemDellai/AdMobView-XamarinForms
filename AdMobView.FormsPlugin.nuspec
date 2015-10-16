@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata minClientVersion="2.8.1">
     <id>Xam.FormsPlugin.AdMobView</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>AdMobView Control Plugin for Xamarin.Forms</title>
     <authors>Houssem Dellai</authors>
     <owners>Houssem Dellai</owners>
@@ -12,7 +12,7 @@
     <iconUrl>https://raw.githubusercontent.com/jamesmontemagno/Xamarin-Templates/master/Plugins-Templates/icons/plugin_icon_nuget.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>
-      Add AdMob ads to your Xamarin.Forms project.
+      Add Google AdMob ads to your Xamarin.Forms project.
       Supported projects: Xamarin.Android and Windows Phone 8 (Silverlight).
     </description>
     <summary>Add AdMob ads to your Xamarin.Forms project.</summary>
