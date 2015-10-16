@@ -65,11 +65,13 @@
       <HintPath>..\..\packages\Xamarin.Forms.1.3.1.6296\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Xamarin.GooglePlayServices.Ads">
-      <HintPath>..\..\packages\Xamarin.GooglePlayServices\Xamarin.GooglePlayServices.Ads.dll</HintPath>
+    <Reference Include="Xamarin.GooglePlayServices.Ads, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Xamarin.GooglePlayServices\lib\MonoAndroid10\Xamarin.GooglePlayServices.Ads.dll</HintPath>
     </Reference>
-    <Reference Include="Xamarin.GooglePlayServices.Base">
-      <HintPath>..\..\packages\Xamarin.GooglePlayServices\Xamarin.GooglePlayServices.Base.dll</HintPath>
+    <Reference Include="Xamarin.GooglePlayServices.Base, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Xamarin.GooglePlayServices\lib\MonoAndroid10\Xamarin.GooglePlayServices.Base.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

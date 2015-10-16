@@ -4,7 +4,7 @@ using Xamarin.Forms;
 using AdMobView.FormsPlugin.iOSUnified;
 using Xamarin.Forms.Platform.iOS;
 
-[assembly: ExportRenderer(typeof(AdMobView.FormsPlugin.Abstractions.AdMobViewControl), typeof(AdMobViewRenderer))]
+[assembly: ExportRenderer(typeof(AdMobView.FormsPlugin.Abstractions.AdMobView), typeof(AdMobViewRenderer))]
 namespace AdMobView.FormsPlugin.iOSUnified
 {
     /// <summary>

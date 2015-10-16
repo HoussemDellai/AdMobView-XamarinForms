@@ -6,8 +6,8 @@
     <title>AdMobView Control Plugin for Xamarin.Forms</title>
     <authors>Houssem Dellai</authors>
     <owners>Houssem Dellai</owners>
-    <licenseUrl></licenseUrl>
-    <projectUrl></projectUrl>
+    <licenseUrl>https://github.com/HoussemDellai/AdMobView-XamarinForms</licenseUrl>
+    <projectUrl>https://github.com/HoussemDellai/AdMobView-XamarinForms</projectUrl>
     <!--Default Icon, a template can be found:  https://raw.githubusercontent.com/jamesmontemagno/Xamarin-Templates/master/Plugins-Templates/icons/plugin_icon.png-->
     <iconUrl>https://raw.githubusercontent.com/jamesmontemagno/Xamarin-Templates/master/Plugins-Templates/icons/plugin_icon_nuget.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -53,11 +53,11 @@
 
     <!--Xamarin.Android-->
     <!--Adding reference to Xamarin.GooglePlayServices-->
-    <file src="packages\Xamarin.GooglePlayServices\Xamarin.GooglePlayServices.Ads.dll"
-        target="Xamarin.GooglePlayServices.Ads.dll" />
+    <file src="packages\Xamarin.GooglePlayServices\lib\MonoAndroid10\Xamarin.GooglePlayServices.Ads.dll"
+        target="lib\MonoAndroid10\Xamarin.GooglePlayServices.Ads.dll" />
 
-    <file src="packages\Xamarin.GooglePlayServices\Xamarin.GooglePlayServices.Base.dll"
-       target="Xamarin.GooglePlayServices.Base.dll" />
+    <file src="packages\Xamarin.GooglePlayServices\lib\MonoAndroid10\Xamarin.GooglePlayServices.Base.dll"
+       target="lib\MonoAndroid10\Xamarin.GooglePlayServices.Base.dll" />
 
     <file src="AdMobView\AdMobView.FormsPlugin.Android\bin\Release\AdMobView.FormsPlugin.Android.dll"
           target="lib\MonoAndroid10\AdMobView.FormsPlugin.Android.dll" />
