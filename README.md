@@ -20,3 +20,5 @@ ID_CAP_MEDIALIB_PLAYBACK	Provides access for currently playing media items.
 
 ID_CAP_MEDIALIB_AUDIO	Provides read access to audio items in media library.
 
+<img src="https://github.com/HoussemDellai/AdMobView-XamarinForms/blob/master/Screenshots/AdMobView-Android.png" width="30%"/>
+<img src="https://github.com/HoussemDellai/AdMobView-XamarinForms/blob/master/Screenshots/AdMobView-WindowsPhone.png" width="30%"/>
