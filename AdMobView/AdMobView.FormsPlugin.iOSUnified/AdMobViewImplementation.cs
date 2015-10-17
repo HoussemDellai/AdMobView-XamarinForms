@@ -1,11 +1,11 @@
-﻿using AdMobView.FormsPlugin.Abstractions;
+﻿
 using System;
 using Xamarin.Forms;
-using AdMobView.FormsPlugin.iOSUnified;
+using Xam.FormsPlugin.iOSUnified;
 using Xamarin.Forms.Platform.iOS;
 
-[assembly: ExportRenderer(typeof(AdMobView.FormsPlugin.Abstractions.AdMobView), typeof(AdMobViewRenderer))]
-namespace AdMobView.FormsPlugin.iOSUnified
+[assembly: ExportRenderer(typeof(Xam.FormsPlugin.Abstractions.AdMobView), typeof(AdMobViewRenderer))]
+namespace Xam.FormsPlugin.iOSUnified
 {
     /// <summary>
     /// AdMobView Renderer

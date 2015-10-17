@@ -1,13 +1,21 @@
-﻿using Xamarin.Forms;
-using EntrepreneursTips.WinPhone.Renderers;
+﻿using System.Diagnostics;
+using System.Threading;
+using System.Windows;
+using Xamarin.Forms;
+
 using GoogleAds;
+using Xam.FormsPlugin.Abstractions;
+using Xam.FormsPlugin.WinPhone;
 using Xamarin.Forms.Platform.WinPhone;
 
-[assembly: ExportRenderer(typeof(AdMobView.FormsPlugin.Abstractions.AdMobView),
+[assembly: ExportRenderer(typeof(AdMobView),
                           typeof(AdMobViewRenderer))]
 
-namespace EntrepreneursTips.WinPhone.Renderers
+namespace Xam.FormsPlugin.WinPhone
 {
+    /// <summary>
+    /// AdMobView renderer implementation for Google AdView ads for Windows Phone.
+    /// </summary>
     public class AdMobViewRenderer : ViewRenderer
     {
 
@@ -27,17 +35,36 @@ namespace EntrepreneursTips.WinPhone.Renderers
             base.OnElementChanged(e);
 
             //convert the element to the control we want
-            var adMobElement = Element as AdMobView.FormsPlugin.Abstractions.AdMobView;
+            var adMobElement = Element as AdMobView;
 
             if ((adMobElement != null) && (e.OldElement == null))
             {
-                AdView bannerAd = new AdView
+                var bannerAd = new AdView
                 {
                     Format = AdFormats.Banner,
                     AdUnitID = adMobElement.AdUnitId,
                 };
-                AdRequest adRequest = new AdRequest();
+
+                var adRequest = new AdRequest();
+
                 bannerAd.LoadAd(adRequest);
+
+                bannerAd.DismissingOverlay += (sender, args) =>
+                {
+                };
+
+                bannerAd.FailedToReceiveAd += (sender, args) =>
+                {
+                };
+
+                bannerAd.ReceivedAd += (sender, args) =>
+                {
+                };
+
+                bannerAd.ShowingOverlay += (sender, args) =>
+                {
+                };
+
                 Children.Add(bannerAd);
             }
         }

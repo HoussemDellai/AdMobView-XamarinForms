@@ -37,7 +37,7 @@
     <DocumentationFile>bin\Release\AdMobView.FormsPlugin.Abstractions.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="AdMobViewControl.cs" />
+    <Compile Include="AdMobView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

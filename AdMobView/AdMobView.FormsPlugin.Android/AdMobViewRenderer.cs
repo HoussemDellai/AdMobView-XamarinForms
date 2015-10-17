@@ -1,14 +1,15 @@
 using Xamarin.Forms;
-using AdMobView.FormsPlugin.Android;
 using Android.Gms.Ads;
+using Xam.FormsPlugin.Abstractions;
+using Xam.FormsPlugin.Android;
 using Xamarin.Forms.Platform.Android;
 
-[assembly: ExportRenderer(typeof(AdMobView.FormsPlugin.Abstractions.AdMobView), typeof(AdMobViewRenderer))]
+[assembly: ExportRenderer(typeof(AdMobView), typeof(AdMobViewRenderer))]
 
-namespace AdMobView.FormsPlugin.Android
+namespace Xam.FormsPlugin.Android
 {
     /// <summary>
-    /// AdMobView Renderer
+    /// AdMobView renderer implementation for Google AdView ads for Xamarin.Android.
     /// </summary>
     public class AdMobViewRenderer : ViewRenderer
     {
@@ -29,11 +30,11 @@ namespace AdMobView.FormsPlugin.Android
             base.OnElementChanged(e);
 
             //convert the element to the control we want
-            var adMobElement = Element as Abstractions.AdMobView;
+            var adMobElement = Element as AdMobView;
 
             if ((adMobElement != null) && (e.OldElement == null))
             {
-                var ad = new AdView(this.Context)
+                var ad = new AdView(Context)
                 {
                     AdSize = AdSize.Banner,
                     AdUnitId = adMobElement.AdUnitId
@@ -43,7 +44,7 @@ namespace AdMobView.FormsPlugin.Android
 
                 ad.LoadAd(requestbuilder.Build());
 
-                this.SetNativeControl(ad);
+                SetNativeControl(ad);
             }
         }
     }

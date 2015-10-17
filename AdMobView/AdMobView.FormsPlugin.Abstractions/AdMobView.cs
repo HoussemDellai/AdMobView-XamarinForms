@@ -1,10 +1,10 @@
 ﻿using System;
 using Xamarin.Forms;
 
-namespace AdMobView.FormsPlugin.Abstractions
+namespace Xam.FormsPlugin.Abstractions
 {
     /// <summary>
-    /// AdMobView Interface
+    /// AdMobView is Google's AdMob ads control implementation for Xamarin.Forms.
     /// </summary>
     public class AdMobView : View
     {
@@ -13,8 +13,8 @@ namespace AdMobView.FormsPlugin.Abstractions
         /// This is the string Id from your Google Play account
         /// </summary>
         public static readonly BindableProperty AdUnitIdProperty =
-            BindableProperty.Create<AdMobView, string>
-                (p => p.AdUnitId, "");
+            BindableProperty.Create<AdMobView, string>(p => p.AdUnitId, "");
+        //AdUnitId example : ca-app-pub-5796681800623607/8623940979
 
         /// <summary>
         /// The ID of the AdMob ad to display
