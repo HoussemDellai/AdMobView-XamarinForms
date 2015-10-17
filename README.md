@@ -7,9 +7,8 @@ The resulted nuget package is available on: https://www.nuget.org/packages/Xam.F
 
 Don't forget to add the following to your Android.Manifest inside <application>:
 
-< activity android:theme="@android:style/Theme.Translucent" 
-          android:name="com.google.android.gms.ads.AdActivity" 
-          android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+< activity android:name="com.google.android.gms.ads.AdActivity" 
+           android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
           
 And add the following capabilities inside your Windows Phone WMAppManifest:
 
